@@ -6,6 +6,7 @@ An agent on a vertical fashion knowledgebase that discovers, enriches, and answe
 - PRD: `docs/PRD.md`
 - Architecture: `docs/ARCHITECTURE.md`
 - API Reference: `docs/API.md`
+- Setup: `docs/SETUP.md`
 
 ## Who this is for
 - Product, engineering, and data teams working on RunwayBase Agent
