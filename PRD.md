@@ -1,6 +1,6 @@
 ## Product Requirements Document (PRD)
 
-### Product: suanfamama-fashion-news-crawler
+### Product: RunwayBase Agent
 ### Doc Owner: PM/Tech Lead
 ### Status: Draft v0.1
 ### Last Updated: 2025-08-12
@@ -8,6 +8,7 @@
 ---
 
 ## 1. Overview
+- One-liner: An agent on a vertical fashion knowledgebase that discovers, enriches, and answers—purpose‑built for runway and brand intelligence.
 - **Problem**: Fashion professionals and enthusiasts lack a centralized, timely, and structured feed of fashion news across brands, magazines, retailers, and events. Information is fragmented, inconsistent, and often locked in unstructured HTML.
 - **Solution**: A compliant web crawling and content enrichment platform that discovers, normalizes, and indexes fashion news in near real time. Provides APIs and optional UI for search, filtering, and trend insights.
 - **Outcome**: Faster research, better monitoring of brands/topics, and a structured dataset for analytics.
@@ -169,3 +170,25 @@
 - Brand pressrooms: Gucci, Louis Vuitton, Prada, Dior, Chanel, Balenciaga, Zara
 - Retailers/blogs: Ssense, Farfetch editorial, Net‑a‑Porter
 - Wires: FashionUnited, Reuters Lifestyle (public pages)
+
+## 20. Branding & Naming
+- Official product name: RunwayBase Agent
+- Positioning: An agent layered on a vertical fashion knowledgebase (runway, brands, designers, shows) delivering monitoring, enrichment, and answers.
+
+### Tagline options
+- Vertical fashion knowledgebase, agentified
+- Fashion’s domain knowledgebase with an action-ready agent
+- Runway to insights, powered by a vertical domain agent
+
+### Logo brief
+- Concept: Integrate a runway/catwalk motif with a knowledge graph. Abstract "R" formed by converging runway lines with node–link dots to convey "knowledgebase." 
+- Style: Minimal, modern, premium.
+- Colors: Primary black (#111), off‑white/ivory (#F7F5F2), accent metallic gold (#C9A227) or electric violet (#6C4DF6).
+- Typography: Geometric sans for brand (e.g., Söhne/GT America) and Inter for product UI.
+- Variations: Icon‑only, horizontal lockup, monochrome for small sizes.
+- Deliverables: SVG, responsive PNGs, dark/light variants, favicon, app icon, social avatar.
+
+### Domain options (check availability)
+- Primary: runwaybase.com, runwaybase.ai, runwaybase.io, runwaybase.app, runwaybase.co
+- Product‑specific: runwaybaseagent.com, runwaybaseagent.ai
+- Supporting/SEO: runwaykb.com, runwaygraph.ai, fashionknowledgebase.ai, verticalfashion.ai
