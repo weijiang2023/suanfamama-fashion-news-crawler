@@ -100,7 +100,7 @@ def create_app(db_path: str) -> Flask:
         ).fetchone()
         if not row:
             return redirect(url_for("index"))
-        return render_template("article.html", article=row)
+        return render_template("article.html", article=row, args=request.args)
 
     return app
 
