@@ -7,6 +7,16 @@ An agent on a vertical fashion knowledgebase that discovers, enriches, and answe
 - Architecture: `docs/ARCHITECTURE.md`
 - API Reference: `docs/API.md`
 - Setup: `docs/SETUP.md`
+- Data Model: `docs/DATA_MODEL.md`
+- Enrichment: `docs/ENRICHMENT.md`
+- Sources: `docs/SOURCES.md`
+- Observability: `docs/OBSERVABILITY.md`
+- Runbook: `docs/RUNBOOK.md`
+- Security: `docs/SECURITY.md`
+- Compliance: `docs/COMPLIANCE.md`
+- Testing & QA: `docs/TESTING.md`
+- Deployment: `docs/DEPLOYMENT.md`
+- Environment Vars: `docs/ENV_VARS.md`
 
 ## Who this is for
 - Product, engineering, and data teams working on RunwayBase Agent
