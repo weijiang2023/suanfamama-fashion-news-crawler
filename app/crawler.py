@@ -29,12 +29,13 @@ def normalize_url(url: str) -> str:
 
 
 def parse_entry_datetime(entry: Dict[str, Any]) -> Optional[str]:
+    safe_get = entry.get if hasattr(entry, "get") else (lambda k, default=None: default)
     dt_candidates: List[Optional[str]] = [
         getattr(entry, "published", None),
         getattr(entry, "updated", None),
-        entry.get("published"),
-        entry.get("updated"),
-        entry.get("pubDate"),
+        safe_get("published"),
+        safe_get("updated"),
+        safe_get("pubDate"),
     ]
     for value in dt_candidates:
         if not value:
