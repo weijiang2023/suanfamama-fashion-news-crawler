@@ -80,15 +80,36 @@ def create_app(db_path: str) -> Flask:
             "SELECT category, COUNT(*) AS c FROM articles GROUP BY category ORDER BY c DESC"
         ).fetchall()
 
+        # Pagination helpers
+        total_pages = (total + per_page - 1) // per_page if per_page else 1
+        args_dict = request.args.to_dict(flat=True)
+        def page_url(p: int) -> str:
+            q = dict(args_dict)
+            q["page"] = p
+            return url_for("index", **q)
+        has_prev = page > 1
+        has_next = page < total_pages
+        first_url = page_url(1) if has_prev else None
+        prev_url = page_url(page - 1) if has_prev else None
+        next_url = page_url(page + 1) if has_next else None
+        last_url = page_url(total_pages) if has_next else None
+
         return render_template(
             "index.html",
             rows=rows,
             page=page,
             per_page=per_page,
             total=total,
+            total_pages=total_pages,
             sources=sources,
             categories=categories,
             args=request.args,
+            has_prev=has_prev,
+            has_next=has_next,
+            first_url=first_url,
+            prev_url=prev_url,
+            next_url=next_url,
+            last_url=last_url,
         )
 
     @app.route("/article/<int:article_id>")
